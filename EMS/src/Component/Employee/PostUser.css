@@ -1,0 +1,106 @@
+/* Container styling */
+.post-user-container {
+  background: #f8fafc;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+  padding: 30px 32px;
+  max-width: 480px;
+  margin: 5px auto;
+  border: 1.5px solid #e3e8ee;
+  transition: box-shadow 0.3s;
+}
+
+.post-user-container:hover {
+  box-shadow: 0 12px 40px rgba(44, 62, 80, 0.18);
+}
+
+/* Form styling */
+.post-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Input fields */
+.post-user-form input,
+.post-user-form select,
+.post-user-form textarea {
+  padding: 12px 14px;
+  border: 1.5px solid #bfc9d1;
+  border-radius: 8px;
+  font-size: 1.07rem;
+  background: #f4f7fb;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(44, 62, 80, 0.03);
+}
+
+.post-user-form input:focus,
+.post-user-form select:focus,
+.post-user-form textarea:focus {
+  border-color: #4b6cb7;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 2px #4b6cb733;
+}
+
+/* Labels */
+.post-user-form label,
+.form-label {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+/* Submit button */
+.post-user-form button {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.13rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+
+}
+
+.post-user-form button:hover {
+  background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Title styling */
+.post-user-container h2 {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #182848;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Error message styling */
+.post-user-error {
+  color: #d90429;
+  font-size: 0.97rem;
+  margin-top: -10px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .post-user-container {
+    padding: 18px 6px;
+    max-width: 98vw;
+  }
+  .post-user-container h2 {
+    font-size: 1.3rem;
+  }
+}

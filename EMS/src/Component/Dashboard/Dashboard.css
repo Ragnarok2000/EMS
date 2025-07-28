@@ -1,0 +1,98 @@
+/* Modern Dashboard with Bootstrap look */
+
+/* Container */
+.dashboard-container {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  padding: 2rem 1.5rem;
+  max-width: 1100px;
+  margin: 2.5rem auto;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #182848;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Table */
+.dashboard-table {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.dashboard-table th {
+  background: #23272b;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #e3e8ee;
+  padding: 1rem 0.75rem;
+  text-align: center;
+}
+
+.dashboard-table td {
+  padding: 0.75rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dashboard-table tr {
+  transition: background 0.2s;
+}
+
+.dashboard-table tr:hover {
+  background: #f4f7fb;
+}
+
+/* Action buttons */
+.dashboard-action-btn {
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  margin: 0 0.25rem;
+  border: none;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.dashboard-action-btn.update {
+  background: #396eea;
+  color: #fff;
+}
+
+.dashboard-action-btn.update:hover {
+  background: #1cc06b;
+  transform: scale(1.05);
+}
+
+.dashboard-action-btn.delete {
+  background: #e04a63;
+  color: #fff;
+}
+
+.dashboard-action-btn.delete:hover {
+  background: #f4000077;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dashboard-container {
+    padding: 1rem 0.25rem;
+    max-width: 98vw;
+  }
+  .dashboard-title {
+    font-size: 1.2rem;
+  }
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 0.5rem 0.25rem;
+    font-size:0.97rem;
+  }
+}
